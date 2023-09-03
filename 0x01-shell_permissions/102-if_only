@@ -1,0 +1,4 @@
+#!/bin/bash
+file="hello"
+
+[ -e "$file" ] && [ "$(stat -c %U "$file")" = "guillaume" ] && chown betty "$file" && echo "Changed owner of '$file' to 'betty'" || echo "No changes made."
