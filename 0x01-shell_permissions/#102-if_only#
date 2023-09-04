@@ -1,0 +1,3 @@
+#!/bin/bash
+#!/bin/bash
+file="hello"; [ -e "$file" ] && [ "$(stat -c %U "$file")" = "guillaume" ] && chown betty "$file
